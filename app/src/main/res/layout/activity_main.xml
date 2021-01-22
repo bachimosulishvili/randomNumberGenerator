@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_background"
+        android:scaleType="centerCrop"
+        />
+
+    <Button
+        android:id="@+id/randomNumberButton"
+        android:background="#C8FF00"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Generate Random Number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/randomNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#FFFFFF"
+        android:text="Tap GENERATE RANDOM NUMBER"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:id="@+id/YesOrNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/randomNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="30sp"
+        android:text="('Yes' means the number is Positive and divides by 5.
+'No' means the number is negative and/or doesn't divide by 5.)"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+</androidx.constraintlayout.widget.ConstraintLayout>
